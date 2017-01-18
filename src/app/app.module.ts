@@ -5,16 +5,21 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import {MultiproviderModule} from "app/multiproviders/MultiproviderModule";
+import {CommonModule} from "@angular/common";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    MultiproviderModule
+    MultiproviderModule,
+    CommonModule
+  ],
+  exports: [
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

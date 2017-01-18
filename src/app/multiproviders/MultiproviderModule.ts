@@ -1,8 +1,9 @@
 import {NgModule} from "@angular/core";
 import {MultiproviderComponent} from "app/multiproviders/MultiproviderComponent";
-import {MultiproviderService} from "app/multiproviders/MultiproviderService";
+import {CommonModule} from "@angular/common";
 @NgModule({
   declarations: [MultiproviderComponent],
+  imports:[CommonModule],
   exports: [MultiproviderComponent]
 })
 export class MultiproviderModule {}
