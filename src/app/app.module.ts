@@ -6,10 +6,12 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import {MultiproviderModule} from "app/multiproviders/MultiproviderModule";
 import {CommonModule} from "@angular/common";
+import {InputChangeColorDirective} from "app/attribute-directive/InputChangeColorDirective";
 
 @NgModule({
   declarations: [
     AppComponent,
+    InputChangeColorDirective
   ],
   imports: [
     BrowserModule,

@@ -5,3 +5,11 @@
   <span>Multiproviders</span>
   <tr-multip></tr-multip>
 </div>
+<hr/>
+<div>
+  <h2>Attribute directive</h2>
+  <span>If more than 3 symbols - they'll change color.</span>
+  <div>
+    <input #field type="text" myInputChangeColor="red" [isColorChanged]="inputLengthCheck(field.value)" />
+  </div>
+</div>

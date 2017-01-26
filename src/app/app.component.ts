@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+  private inputLengthCheck = (value: string, length: number = 3) => value.length >= length;
 }
