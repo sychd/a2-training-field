@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import {MultiproviderModule} from "app/multiproviders/MultiproviderModule";
 import {CommonModule} from "@angular/common";
 import {InputChangeColorDirective} from "app/attribute-directive/InputChangeColorDirective";
+import {DynamicComponentsModule} from "./dynamic-components/dynamic-components.module";
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {InputChangeColorDirective} from "app/attribute-directive/InputChangeColo
     FormsModule,
     HttpModule,
     MultiproviderModule,
-    CommonModule
+    CommonModule,
+    DynamicComponentsModule
   ],
   exports: [
     CommonModule

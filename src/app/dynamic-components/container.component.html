@@ -1,0 +1,5 @@
+<h1>Dynamic components example</h1>
+<span (click)="load('first')">Load first</span>
+<span (click)="load('second')">Load second</span>
+<span *ngIf="currentComp" (click)="changeData()">Change data</span>
+<ng-container dynamicHostDirective></ng-container>
